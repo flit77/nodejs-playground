@@ -6,9 +6,9 @@ process.on('message', msg => {
   usersCount = msg.usersCount;
 });
 
-setTimeout(() => {
-  process.exit(1); // death by random timeout
-}, Math.random() * 10000);
+// setTimeout(() => {
+//   process.exit(1); // death by random timeout
+// }, Math.random() * 10000);
 
 http
   .createServer((req, res) => {
