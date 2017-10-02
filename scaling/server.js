@@ -1,6 +1,10 @@
 const http = require('http');
 const pid = process.pid;
 
+process.on('message', msg => {
+  console.log(`Message from master: ${msg}`);
+});
+
 http
   .createServer((req, res) => {
     for (let i = 0; i < 1e7; i++); // simulate CPU work
