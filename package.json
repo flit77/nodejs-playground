@@ -1,0 +1,23 @@
+{
+  "name": "node_pg",
+  "version": "1.0.0",
+  "description": "> Repository to practice is node_js experimental/new/unused before features and techniques, e.g. spawn child process, async_hook, etc. > Scaling source article: https://medium.freecodecamp.org/scaling-node-js-applications-8492bd8afadc",
+  "main": "asynchook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flit77/nodejs-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flit77/nodejs-playground/issues"
+  },
+  "homepage": "https://github.com/flit77/nodejs-playground#readme",
+  "dependencies": {
+    "node-notifier": "^5.1.2"
+  }
+}
