@@ -1,3 +1,4 @@
+// source article: https://davidwalsh.name/system-notifications-node
 const notifier = require('node-notifier');
 
 // String
