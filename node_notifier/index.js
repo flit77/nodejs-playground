@@ -1,7 +1,7 @@
 const notifier = require('node-notifier');
 
 // String
-notifier.notify('Go empty the dishwasher!');
+// notifier.notify('Go empty the dishwasher!');
 
 // Object
 notifier.notify({
