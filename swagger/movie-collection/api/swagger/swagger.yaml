@@ -52,6 +52,24 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"            
+  /movie/{id}:
+    x-swagger-router-controller: movie
+    get:
+      description: get a movie
+      parameters:
+        - name: id
+          type: string
+          in: path
+          required: true
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/GetMovieResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"            
   /swagger:
     x-swagger-pipe: swagger_raw
 # complex objects have schema definitions
@@ -96,6 +114,18 @@ definitions:
               type: string
             year:
               type: number
+  GetMovieResponse:
+    required:
+      - id
+      - title
+      - year
+    properties:
+      id:
+        type: string
+      title: 
+        type: string
+      year:
+        type: number
   ErrorResponse:
     required:
       - message
