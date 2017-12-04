@@ -22,6 +22,7 @@ paths:
     # our controller name
     x-swagger-router-controller: movie
     get:
+      operationId: getAll
       description: get the movies list
       # define the type of response for Success "200" and Error
       responses:
@@ -34,6 +35,7 @@ paths:
           schema:
             $ref: "#/definitions/ErrorResponse"  
     post:
+      operationId: save
       description: add a new movie to the list
       # movie info to be stored
       parameters:
@@ -55,6 +57,7 @@ paths:
   /movie/{id}:
     x-swagger-router-controller: movie
     get:
+      operationId: getOne
       description: get a movie
       parameters:
         - name: id
@@ -71,6 +74,7 @@ paths:
           schema:
             $ref: "#/definitions/ErrorResponse"            
     put:
+      operationId: update
       description: update a movie
       parameters:
         - name: id
@@ -94,6 +98,7 @@ paths:
           schema:
             $ref: "#/definitions/ErrorResponse"            
     delete:
+      operationId: delMovie
       description: delete a movie
       # define the parameters
       parameters:
